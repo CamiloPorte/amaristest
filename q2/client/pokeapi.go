@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"time"
 )
@@ -16,13 +15,11 @@ type PokeApi interface {
 type pokeApi struct {
 	URL     string
 	Timeout time.Duration
-	log     log.Logger
 }
 
-func NewPokeApi(url string, log log.Logger) PokeApi {
+func NewPokeApi(url string) PokeApi {
 	return &pokeApi{
 		URL: url,
-		log: log,
 	}
 }
 

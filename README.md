@@ -19,3 +19,9 @@ make runq1
 make runq2
 make runq3
 ```
+
+Para correr los test de las piexas se debe correr el siguiente comando:
+
+```sh
+make test
+```

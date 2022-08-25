@@ -1,6 +1,10 @@
 # Saludos
 Este repositorio tiene la respuesta a 3 enunciados
 
+## Requerimientos
+
+Solo de debe tener instalado [Go](https://go.dev/doc/install), en este caso se utiliza la versión 1.17.
+
 ## Pregunta 1
 Realizar una funcion que reciba una cadena de texto, que contenga una lista de nombres separados por comas ejemplo "Luis,Camilo,Andres,Laura" y devuelva dos parametros: una array de strings con los nombres ordenados alfabeticamente y un entero indicando la cantidad de nombres
 

@@ -14,6 +14,9 @@ func main() {
 }
 
 func GetDataByPoint(data string) ([]string, int) {
+	if len(data) == 0 {
+		return nil, 0
+	}
 	arrayData := strings.Split(data, ",")
 	sortedData := sort.StringSlice(arrayData)
 	sortedData.Sort()

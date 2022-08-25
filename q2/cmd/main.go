@@ -9,7 +9,9 @@ import (
 func main() {
 	logger := log.Default()
 	PA := client.NewPokeApi("https://pokeapi.co/api/v2/pokemon-form/", *logger)
-	answ, err := PA.Get(1)
+	var option int
+	fmt.Scanln(&option)
+	answ, err := PA.Get(option)
 	if err != nil {
 		logger.Println("error in the call:", err)
 	}

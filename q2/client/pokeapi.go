@@ -45,6 +45,5 @@ func (p *pokeApi) Get(requestData int) (string, error) {
 	}
 	var answ responseReq
 	json.Unmarshal(resBody, &answ)
-	fmt.Println("the name is: ", answ.Pokemon.Name)
 	return answ.Pokemon.Name, nil
 }

@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	data := ""
+	var data string
+	fmt.Scanln(&data)
 	sortedData, lenData := GetDataByPoint(data)
 	fmt.Println("the data is: ", sortedData, "the lenght is: ", lenData)
 }
